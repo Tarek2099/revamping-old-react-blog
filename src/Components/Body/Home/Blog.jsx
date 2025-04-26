@@ -1,14 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-    Button,
-    Card,
-    CardBody,
-    CardImg,
-    CardSubtitle,
-    CardText,
-    CardTitle,
-    Spinner
+  Button,
+  Card,
+  CardBody,
+  CardImg,
+  CardSubtitle,
+  CardText,
+  CardTitle,
+  Spinner,
 } from "reactstrap";
 
 const Blog = ({ data, loading, error }) => {
@@ -41,7 +41,7 @@ const Blog = ({ data, loading, error }) => {
               <CardImg
                 alt={data.name || "Blog post image"}
                 src={data.image}
-                style={{ maxHeight: '300px', objectFit: 'cover' }}
+                style={{ maxHeight: "300px", objectFit: "cover" }}
               />
             </div>
             <div>
@@ -51,10 +51,8 @@ const Blog = ({ data, loading, error }) => {
                   {data.date}
                 </CardSubtitle>
                 <CardText>{data.cardText}</CardText>
-                <Link to={`/details/${data.id}`}>
-                  <Button className="btn">
-                    Read More
-                  </Button>
+                <Link to={`/blog/${data.id}`}>
+                  <Button className="btn">Read More</Button>
                 </Link>
               </CardBody>
             </div>

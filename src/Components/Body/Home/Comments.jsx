@@ -17,14 +17,14 @@ const Comments = () => {
     setError("");
   };
 
-  if (!isAuthenticated) {
-    return (
-      <div className="comments-section">
-        <h4>Comments</h4>
-        <p>Please log in to leave a comment.</p>
-      </div>
-    );
-  }
+  // if (!isAuthenticated) {
+  //   return (
+  //     <div className="comments-section">
+  //       <h4>Comments</h4>
+  //       <p>Please log in to leave a comment.</p>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className="comments-section">
