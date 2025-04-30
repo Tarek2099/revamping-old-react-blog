@@ -1,5 +1,5 @@
 import React from "react";
-import { UseContext } from "../../Context/MyContext.jsx";
+import { UseContext } from "../../../Context/MyContext.jsx";
 import Sidebar from "../../Sidebar/Sidebar.jsx";
 import Blog from "./Blog.jsx";
 

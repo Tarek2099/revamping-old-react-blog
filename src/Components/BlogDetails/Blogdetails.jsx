@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
+import { UseContext } from "../../Context/MyContext";
 import Comments from "../Body/Home/Comments";
-import { UseContext } from "../Context/MyContext";
 import Sidebar from "../Sidebar/Sidebar";
 import "./BlogDetails.css";
 
@@ -13,7 +13,7 @@ const Blogdetails = () => {
   const blog = blogs.find((blog) => blog.id === parseInt(id));
 
   return (
-    <div className="container">
+    <div className="details-container">
       <div style={{ display: "flex" }} className="blog-details-container">
         {id && (
           <div className="col-8">

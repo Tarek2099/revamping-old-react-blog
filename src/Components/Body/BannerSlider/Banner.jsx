@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
-import { UseContext } from "../../Context/MyContext";
+import { UseContext } from "../../../Context/MyContext";
 import "./Banner.css";
 
 function Banner() {

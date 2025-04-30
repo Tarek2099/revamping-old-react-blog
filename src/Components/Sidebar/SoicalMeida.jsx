@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const SoicalMeida = () => {
   return (
@@ -6,23 +6,23 @@ const SoicalMeida = () => {
       <h2 className="socialhead">Social Media</h2>
       <div className="socialicon">
         <a href="/">
-          <i class="fab fa-facebook-square"></i>
+          <i className="fab fa-facebook-square"></i>
         </a>
         <a href="/">
-          <i class="fab fa-linkedin"></i>
+          <i className="fab fa-linkedin"></i>
         </a>
         <a href="/">
-          <i class="fab fa-twitter-square"></i>
+          <i className="fab fa-twitter-square"></i>
         </a>
         <a href="/">
-          <i class="fab fa-discord"></i>
+          <i className="fab fa-discord"></i>
         </a>
         <a href="/">
-          <i class="fab fa-youtube"></i>
+          <i className="fab fa-youtube"></i>
         </a>
       </div>
     </div>
   );
-}
+};
 
 export default SoicalMeida;

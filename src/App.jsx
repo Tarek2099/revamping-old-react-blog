@@ -1,20 +1,23 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import "./App.css";
-import Blogdetails from "./Components/BlogDetails/Blogdetails";
-import { ContextProvider } from "./Components/Context/MyContext";
 import MainComponents from "./Components/MainComponents";
+import { ContextProvider } from "./Context/MyContext";
 import { initialState } from "./Data/Data";
+import router from "./Routes/Routes";
 
 function App() {
   return (
     <>
       <ContextProvider value={initialState}>
-        <BrowserRouter>
+        {/* <BrowserRouter>
           <Routes>
             <Route path="/" element={<MainComponents />} />
             <Route path="/blog/:id" element={<Blogdetails />} />
           </Routes>
-        </BrowserRouter>
+        </BrowserRouter> */}
+        <RouterProvider router={router}>
+          <MainComponents />
+        </RouterProvider>
       </ContextProvider>
     </>
   );

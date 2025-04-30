@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { UseContext } from "../Context/MyContext";
+import { UseContext } from "../../Context/MyContext";
 
 const Categories = () => {
   const blogs = UseContext();

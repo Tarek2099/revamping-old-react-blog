@@ -1,5 +1,5 @@
 import React from "react";
-import { UseContext } from "../Context/MyContext";
+import { UseContext } from "../../Context/MyContext";
 
 const LatestPosts = () => {
   const blogs = UseContext();
