@@ -10,7 +10,7 @@ const Gallery = () => {
   return (
     <div className="galleryImages">
       {gallery.map((blog) => (
-        <img src={blog.image} alt={blog.name} />
+        <img key={blog.id} src={blog.image} alt={blog.name} />
       ))}
     </div>
   );

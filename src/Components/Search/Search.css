@@ -1,0 +1,16 @@
+/* Search Box design */
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+}
+.searchboxContainer {
+  display: flex;
+}
+.searchbox {
+  position: relative;
+}
+.searchHide {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}

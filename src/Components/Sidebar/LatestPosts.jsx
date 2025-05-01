@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { UseContext } from "../../Context/MyContext";
 
 const LatestPosts = () => {
@@ -12,7 +13,7 @@ const LatestPosts = () => {
         {latestPosts.map((post) => (
           <li key={post.id}>
             <span>
-              <a href={`/blog/${post.id}`}>{post.name}</a>
+              <Link to={`/blog/${post.id}`}>{post.name}</Link>
             </span>
           </li>
         ))}

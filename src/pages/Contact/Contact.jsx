@@ -7,25 +7,25 @@ const Contact = () => {
     name: "",
     email: "",
     subject: "",
-    message: ""
+    message: "",
   });
   const [errors, setErrors] = useState({});
 
   const validateForm = () => {
     const newErrors = {};
     if (!formData.name.trim()) {
-      newErrors.name = 'Name is required';
+      newErrors.name = "Name is required";
     }
     if (!formData.email) {
-      newErrors.email = 'Email is required';
+      newErrors.email = "Email is required";
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = 'Email is invalid';
+      newErrors.email = "Email is invalid";
     }
     if (!formData.subject.trim()) {
-      newErrors.subject = 'Subject is required';
+      newErrors.subject = "Subject is required";
     }
     if (!formData.message.trim()) {
-      newErrors.message = 'Message is required';
+      newErrors.message = "Message is required";
     }
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -33,9 +33,9 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
@@ -43,7 +43,7 @@ const Contact = () => {
     e.preventDefault();
     if (validateForm()) {
       // Add your form submission logic here
-      console.log('Form submitted:', formData);
+      console.log("Form submitted:", formData);
     }
   };
 
@@ -114,7 +114,7 @@ const Contact = () => {
                 placeholder="Name"
               />
               {errors.name && <span className="error">{errors.name}</span>}
-              
+
               <label>Email</label>
               <input
                 name="email"
@@ -124,7 +124,7 @@ const Contact = () => {
                 type="email"
               />
               {errors.email && <span className="error">{errors.email}</span>}
-              
+
               <label>Subject</label>
               <input
                 name="subject"
@@ -132,8 +132,10 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Subject"
               />
-              {errors.subject && <span className="error">{errors.subject}</span>}
-              
+              {errors.subject && (
+                <span className="error">{errors.subject}</span>
+              )}
+
               <label>Message</label>
               <textarea
                 name="message"
@@ -142,7 +144,9 @@ const Contact = () => {
                 placeholder="Your message"
                 className="textAreaMsg"
               />
-              {errors.message && <span className="error">{errors.message}</span>}
+              {errors.message && (
+                <span className="error">{errors.message}</span>
+              )}
 
               <button type="submit">Submit</button>
             </Form>

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Form } from "reactstrap";
 
-class Registration extends Component {
+class SignUp extends Component {
   state = {
     fname: "",
     lname: "",
@@ -92,4 +92,4 @@ class Registration extends Component {
   }
 }
 
-export default Registration;
+export default SignUp;

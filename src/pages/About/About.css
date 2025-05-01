@@ -1,0 +1,41 @@
+.about-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.brand-name {
+  color: #007bff;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.about-intro {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+.about-highlights ul {
+  list-style: disc inside;
+  margin-bottom: 24px;
+}
+
+.about-highlights li {
+  margin-bottom: 10px;
+}
+
+.about-mission {
+  margin-bottom: 24px;
+}
+
+.about-cta {
+  background: #f0f8ff;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1rem;
+}

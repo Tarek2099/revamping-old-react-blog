@@ -1,14 +1,17 @@
 import React from "react";
-import { useParams } from "react-router";
+import { Outlet, useParams } from "react-router";
+import "../../App.css";
+import Comments from "../../Components/Comment/Comments.jsx";
+import Sidebar from "../../Components/Sidebar/Sidebar";
 import { UseContext } from "../../Context/MyContext";
-import Comments from "../Body/Home/Comments";
-import Sidebar from "../Sidebar/Sidebar";
 import "./BlogDetails.css";
 
 const Blogdetails = () => {
+  console.log("Details Rendered");
   const blogs = UseContext();
   // Get id from routing parameter
   const { id } = useParams();
+  console.log(id);
   // Find blog similar to id
   const blog = blogs.find((blog) => blog.id === parseInt(id));
 
@@ -40,6 +43,7 @@ const Blogdetails = () => {
           <Sidebar />
         </div>
       </div>
+      <Outlet />
     </div>
   );
 };

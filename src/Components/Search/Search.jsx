@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Header.css";
+import "./Search.css";
 
 const Search = () => {
   const [isVisible, setIsVisible] = useState(false);

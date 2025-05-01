@@ -45,19 +45,19 @@ const Footer = () => {
                 <h6>mdtarekrahman@gmail.com</h6>
                 <div className="footerSocialicon">
                   <a href="/">
-                    <i class="fab fa-facebook-square"></i>
+                    <i className="fab fa-facebook-square"></i>
                   </a>
                   <a href="/">
-                    <i class="fab fa-linkedin"></i>
+                    <i className="fab fa-linkedin"></i>
                   </a>
                   <a href="/">
-                    <i class="fab fa-twitter-square"></i>
+                    <i className="fab fa-twitter-square"></i>
                   </a>
                   <a href="/">
-                    <i class="fab fa-discord"></i>
+                    <i className="fab fa-discord"></i>
                   </a>
                   <a href="/">
-                    <i class="fab fa-youtube"></i>
+                    <i className="fab fa-youtube"></i>
                   </a>
                 </div>
               </div>

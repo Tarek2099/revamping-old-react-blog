@@ -8,7 +8,7 @@ import {
   NavbarBrand,
   NavbarToggler,
 } from "reactstrap";
-import Search from "./Search";
+import Search from "../Search/Search";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,8 +33,8 @@ const Header = () => {
                 </Link>
               </NavItem>
               <NavItem>
-                <Link to="/blogs" className="navlink">
-                  Blogs
+                <Link to="/blog" className="navlink">
+                  Blog
                 </Link>
               </NavItem>
               <NavItem>
