@@ -33,10 +33,7 @@
 .navlink:hover {
   color: #000 !important;
 }
-.fa-search {
-  margin: 5px 0px 0px 40px;
-  cursor: pointer;
-}
+
 .searchHide {
   position: absolute;
   right: 30px;
@@ -49,7 +46,7 @@
 }
 .blogsCard {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .card {
   margin: 10px 0px;
@@ -73,22 +70,7 @@ img.card-img {
   border-top: 2px solid darkslategray;
   border-bottom: 2px solid darkslategrey;
 }
-.search {
-  background: #fff;
-  padding-bottom: 30px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 5px #ccc;
-}
-input.searchbox {
-  width: 90%;
-  border: none;
-  padding: 6px;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  display: inherit;
-  margin: 0 auto;
-  outline: none;
-}
+
 button.searchButton {
   padding: 7px 0px;
   border-radius: 4px;

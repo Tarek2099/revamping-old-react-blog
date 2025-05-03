@@ -1,0 +1,33 @@
+.navbar > .container-fluid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.search {
+  background: #fff;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #ccc;
+}
+input.searchbox {
+  position: relative;
+  width: 100%;
+  border: none;
+  padding: 6px 40px;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  display: inherit;
+  margin: 0 auto;
+  outline: none;
+}
+.fa-search {
+  position: absolute;
+  left: 51%;
+  top: 40%;
+}
+.fa-user {
+  color: #000;
+  padding: 6px 7px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}

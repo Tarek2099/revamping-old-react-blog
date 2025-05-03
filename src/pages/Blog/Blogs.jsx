@@ -9,7 +9,7 @@ const Blogs = () => {
   return (
     <div className="container blog">
       <div style={{ display: "flex" }} className="allBlogs">
-        <div className="col-8 blogsCard">
+        <div className="col-9 blogsCard">
           {blogs?.length > 0 ? (
             blogs.map((blog) => (
               <Blog key={blog.id} data={blog} loading={false} error={null} />
@@ -18,7 +18,7 @@ const Blogs = () => {
             <div className="no-blogs">No blog posts available</div>
           )}
         </div>
-        <div className="col-4 sideBarResponsive">
+        <div className="col-3 sideBarResponsive">
           <Sidebar />
         </div>
       </div>

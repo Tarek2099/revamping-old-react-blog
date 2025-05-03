@@ -9,6 +9,7 @@ import {
   NavbarToggler,
 } from "reactstrap";
 import Search from "../Search/Search";
+import "./Header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +25,9 @@ const Header = () => {
           <NavbarBrand href="/" className="navbrand">
             My Blog
           </NavbarBrand>
+          <div className="searchMiddle">
+            <Search />
+          </div>
           <NavbarToggler onClick={toggleHandle} />
           <Collapse navbar isOpen={isOpen}>
             <Nav className="navlist" navbar>
@@ -48,22 +52,21 @@ const Header = () => {
                 </Link>
               </NavItem>
               <NavItem>
+                <Link to="/profile" className="navlink">
+                  <i className="fas fa-user"></i>
+                </Link>
+              </NavItem>
+              {/* <NavItem>
                 <Link to="/write" className="navlink">
                   Write
                 </Link>
               </NavItem>
+              <NavItem>
+                <Link to="/login" className="navlink">
+                  Login
+                </Link>
+              </NavItem> */}
             </Nav>
-
-            <div>
-              <Nav navbar>
-                <NavItem>
-                  <Link to="/login" className="navlink">
-                    Login
-                  </Link>
-                </NavItem>
-              </Nav>
-            </div>
-            <Search />
           </Collapse>
         </Navbar>
       </div>
