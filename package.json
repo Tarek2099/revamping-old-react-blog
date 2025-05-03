@@ -1,7 +1,6 @@
 {
   "name": "my-blog",
   "homepage": "https://tarek2099.github.io/revamping-old-react-blog",
-  "private": true,
   "version": "0.1.0",
   "type": "module",
   "scripts": {
